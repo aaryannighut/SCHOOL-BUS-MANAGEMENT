@@ -63,13 +63,17 @@ To run this project locally, follow these steps:
 
 ## 🖥️ Screenshots
 *(Screenshots of the Admin Dashboard, Booking System, and Login Page will be added here)*
-- [Login Page Screenshot]
-- [Admin Dashboard Screenshot]
-- [Route Management Screenshot]
+- ![alt text](<Screenshot 2025-04-18 190907.png>)
+- ![alt text](<Screenshot 2025-04-18 191038.png>)
+- ![alt text](<Screenshot 2025-04-18 191129.png>)
+- ![alt text](<Screenshot 2025-04-18 191257.png>)
+- ![alt text](<Screenshot 2025-04-18 213654.png>)
 
 ## 🤝 Contributors
-- **Aaryan** - *Lead Developer*
-- [Placeholder for other contributors]
+- **Aaryan Nighut** - *Lead Developer*
+- Aarya Nighut 
+- Ekanksh Mohite
+- rahul Yadav
 
 ## 📜 License
 This project is licensed under the **MIT License** - see the LICENSE file for details.
