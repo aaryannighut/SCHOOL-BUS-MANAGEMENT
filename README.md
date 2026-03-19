@@ -73,7 +73,7 @@ To run this project locally, follow these steps:
 - **Aaryan Nighut** - *Lead Developer*
 - Aarya Nighut 
 - Ekanksh Mohite
-- rahul Yadav
+- Rahul Yadav
 
 ## 📜 License
 This project is licensed under the **MIT License** - see the LICENSE file for details.
