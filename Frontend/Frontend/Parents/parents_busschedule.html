@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Status</title>
+    <link rel="stylesheet" href="parents_busschedule.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=DCVzwScSnIKl&format=png&color=000000" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="admin_box"><h3>Parents Panel</h3></div>
+        <hr>
+        <ul>
+            <li><a href="#" class="first">Dashboard</a></li>
+            <li><a href="#"class="second">Bus Schedule</a></li>
+            <li><a href="#" class="third">Profile</a></li>
+            <!-- <li><a href="#" class="fourth">Bookings</a></li> -->
+            <!-- <li><a href="#" class="fifth">Customers</a></li> -->
+            <!-- <li><a href="#" class="sixth">Add Admin</a></li> -->
+            <li><a href="#" class="seventh">Logout</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Welcome, Parents</h1>
+            <button class="logout">LOGOUT</button>
+        </header>
+        <section class="route-status">
+            <h2>Bus Schedule</h2>
+            <!-- <button class="add-route" onclick="addRoute()">ADD ROUTE DETAILS +</button> -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Via Cities</th>
+                        <th>Bus</th>
+                        <th>Departure Date</th>
+                        <th>Departure Time</th>
+                        <!-- <th>Cost</th>
+                        <th>Actions</th> -->
+                    </tr>
+                </thead>
+                <tbody id="route-table">
+                    <!-- Rows will be dynamically added using JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="parents_busschedule.js"></script>
+</body>
+</html>

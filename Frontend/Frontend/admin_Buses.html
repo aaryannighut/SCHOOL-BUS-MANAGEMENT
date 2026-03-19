@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buses Status</title>
+    <link rel="stylesheet" href="admin_Buses.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=DCVzwScSnIKl&format=png&color=000000" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="admin_box"><h3>Admin Panel</h3></div>
+        <ul><hr>
+            <li><a href="#" class="first">Dashboard</a></li>
+            <li><a href="#"class="second">Buses</a></li>
+            <li><a href="#" class="third">Routes</a></li>
+            <li><a href="#" class="fourth">Bookings</a></li>
+            <li><a href="#" class="fifth">Customers</a></li>
+            <li><a href="#" class="sixth">Add Admin</a></li>
+            <li><a href="#" class="seventh">Logout</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Welcome, Admin</h1>
+            <button class="logout">LOGOUT</button>
+        </header>
+        <h2>Bus Status</h2>
+        <button class="add-bus-btn" onclick="addBus()">ADD BUS DETAILS +</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Bus Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="bus-table">
+                <!-- Rows will be added dynamically via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="admin_Buses.js"></script>
+</body>
+</html>

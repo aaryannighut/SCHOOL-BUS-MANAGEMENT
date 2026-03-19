@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Global Styles */
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f9;
+
+}
+.sidebar {
+    width: 21.7rem;
+    background-color: #0788b0;
+    color: #fff;
+    padding: 1rem;
+}
+
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    
+}
+.admin_box {
+    box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 1.1em;
+    transition: all 0.3s;
+}
+.sidebar ul li a.fifth {
+    background-color: rgba(255, 255, 255,0.8);
+    color: black;
+}
+
+.sidebar ul li a:hover {
+ 
+    padding-left: 10px;
+    color: black;
+    background-color: rgba(255, 255, 255,0.8);
+}
+.sidebar ul li a.seventh:hover {
+    background-color: rgba(255, 255, 255,0.8);
+    color:red;
+}
+
+
+/* General Page Styles */
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.logout {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.username {
+    color: #000000;
+}
+
+.notification {
+    padding: 10px;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Action Buttons */
+.edit-btn {
+    background-color: #ffc107;
+    color: white;
+}
+button.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn {
+    margin-left:1rem;
+    background-color: #dc3545;
+    color: white;
+}
+button.delete-btn:hover {
+    background-color: #bd2130;
+}
+
+
+.add-customer-btn {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
