@@ -11,14 +11,23 @@ if(isset($_POST['signUp'])){
     $Password=md5($Password);
     $ConfirmPassword=$_POST['ConfirmPassword'];
 
+<<<<<<< HEAD
     $checkEmail="SELECT * From users where emails='$Email' ";
+=======
+    $checkEmail="SELECT * From users where Email='$Email' ";
+>>>>>>> e7e5ebe (Add readme file and Remove unwanted files)
     $result=$conn->query($checkEmail);
     if($result->num_rows>0){
         echo "Email Address Already Exists !";
     }
     else{
+<<<<<<< HEAD
         $insertQuery="INERT INTO users(Username,Address,Email,ContactNumber,Password,ConfirmPassword)
                         VALUES ('$Username','$Address'',$Email','$ContactNumber','$Password','$ConfirmPassword') "
+=======
+        $insertQuery="INSERT INTO users(Username,Address,Email,ContactNumber,Password,ConfirmPassword)
+                        VALUES ('$Username','$Address','$Email','$ContactNumber','$Password','$ConfirmPassword') ";
+>>>>>>> e7e5ebe (Add readme file and Remove unwanted files)
             if($conn->query($insertQuery)==TRUE){
                 header("location: login.php");
             }
@@ -34,7 +43,11 @@ if(isset($_POST['signIn'])){
     $Password=$_POST['Password'];
     $Password=md5($Password);
 
+<<<<<<< HEAD
     $sql="SELECT * FROM users WHERE Email='$Email' and Password='$Password' "
+=======
+    $sql="SELECT * FROM users WHERE Email='$Email' and Password='$Password' ";
+>>>>>>> e7e5ebe (Add readme file and Remove unwanted files)
     $result=$conn->query($sql);
     if($result->num_rows>0){
         session_start();
@@ -44,7 +57,11 @@ if(isset($_POST['signIn'])){
         exit();
     }
     else{
+<<<<<<< HEAD
         echo "Not Found, Incorrect Email or Password"
+=======
+        echo "Not Found, Incorrect Email or Password";
+>>>>>>> e7e5ebe (Add readme file and Remove unwanted files)
     }
 }
 
