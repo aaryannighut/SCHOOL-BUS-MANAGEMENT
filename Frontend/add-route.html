@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add A Route</title>
+    <link rel="stylesheet" href="add-route.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Add A Route</h2>
+        <form id="routeForm">
+            <label for="viaCities">Via Cities</label>
+            <input type="text" id="viaCities" name="viaCities" placeholder="Comma Separated List">
+
+            <label for="busNumber">Bus Number</label>
+            <input type="text" id="busNumber" name="busNumber" placeholder="Enter Bus Number">
+            <div id="suggestion" style="display: none;">XYZ7890</div>
+
+            <label for="departureDate">Departure Date</label>
+            <input type="text" id="departureDate" name="departureDate" placeholder="mm/dd/yyyy">
+
+            <label for="departureTime">Departure Time</label>
+            <input type="text" id="departureTime" name="departureTime" placeholder="--:-- --">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="add-route.js"></script>
+</body>
+</html>

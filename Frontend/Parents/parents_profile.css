@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Global Styles */
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f9;
+
+}
+.sidebar {
+    width: 21.7rem;
+    background-color: #0788b0;
+    color: #fff;
+    padding: 1rem;
+}
+
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    
+}
+.admin_box {
+    box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 1.1em;
+    transition: all 0.3s;
+}
+.sidebar ul li a.third {
+    background-color: rgba(255, 255, 255,0.8);
+    color: black;
+}
+
+.sidebar ul li a:hover {
+ 
+    padding-left: 10px;
+    color: black;
+    background-color: rgba(255, 255, 255,0.8);
+}
+.sidebar ul li a.seventh:hover {
+    background-color: rgba(255, 255, 255,0.8);
+    color:red;
+}
+
+/* General Styles */
+
+/* Container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header .logout {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+header .logout:hover {
+    background-color: #c82333;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Add Booking Button */
+.add-booking {
+    padding: 10px 20px 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background 0.3s;
+}
+
+.add-booking:hover {
+    background-color: #218838;
+}
+
+/* Action Buttons */
+.actions button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  
+}
+
+.actions .edit {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.actions .edit:hover {
+    background-color: #e0a800;
+}
+
+.actions .delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.actions .delete:hover {
+    background-color: #c82333;
+}

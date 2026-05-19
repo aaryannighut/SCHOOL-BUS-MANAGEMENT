@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Dashboard</title>
+    <link rel="stylesheet" href="driver.css">
+    <script src="driver.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Driver Panel</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">My Routes</a></li>
+            <li><a href="#">Assigned Bus</a></li>
+            <li><a href="#">Upcoming Trips</a></li>
+            <li><a href="#">Completed Trips</a></li>
+            <li><a href="#">Student List</a></li>
+            <li><a href="#">Earnings</a></li>
+            <li><a href="#">Emergency Contact</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#" class="logout">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Driver Dashboard</h1>
+        
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>My Routes</h3>
+                <p>Total Routes: 5</p>
+                <a href="#">View More →</a>
+            </div>
+            <div class="card">
+                <h3>Assigned Bus</h3>
+                <p>Bus No: 12A</p>
+                <a href="#">View More →</a>
+            </div>
+            <div class="card">
+                <h3>Upcoming Trips</h3>
+                <p>Next Trip: 7:30 AM</p>
+                <a href="#">View More →</a>
+            </div>
+            <div class="card">
+                <h3>Completed Trips</h3>
+                <p>Total: 25</p>
+                <a href="#">View More →</a>
+            </div>
+            <div class="card">
+                <h3>Earnings</h3>
+                <p>₹15,000</p>
+                <a href="#">View More →</a>
+            </div>
+            <div class="card">
+                <h3>Trip Status</h3>
+                <select id="trip-status">
+                    <option value="started">Started</option>
+                    <option value="on-route">On Route</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

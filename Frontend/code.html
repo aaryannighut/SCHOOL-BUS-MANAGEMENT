@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Bus Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>School Bus Management System</h2>
+    <label for="busNumber">Bus Number:</label>
+    <input type="text" id="busNumber" placeholder="Enter Bus Number">
+    <label for="route">Route:</label>
+    <input type="text" id="route" placeholder="Enter Route">
+    <button onclick="addBus()">Add Bus</button>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Bus Number</th>
+                <th>Route</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="busList">
+            <!-- Bus list will appear here -->
+        </tbody>
+    </table>
+    
+    <script>
+        function addBus() {
+            let busNumber = document.getElementById("busNumber").value;
+            let route = document.getElementById("route").value;
+            
+            if (busNumber === "" || route === "") {
+                alert("Please fill in all fields");
+                return;
+            }
+            
+            let table = document.getElementById("busList");
+            let row = table.insertRow();
+            
+            let cell1 = row.insertCell(0);
+            let cell2 = row.insertCell(1);
+            let cell3 = row.insertCell(2);
+            
+            cell1.textContent = busNumber;
+            cell2.textContent = route;
+            cell3.innerHTML = '<button onclick="deleteBus(this)">Delete</button>';
+            
+            document.getElementById("busNumber").value = "";
+            document.getElementById("route").value = "";
+        }
+        
+        function deleteBus(button) {
+            let row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
+    </script>
+</body>
+</html>

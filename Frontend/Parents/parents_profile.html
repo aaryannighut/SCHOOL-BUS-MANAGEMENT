@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Status</title>
+    <link rel="stylesheet" href="parents_profile.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=DCVzwScSnIKl&format=png&color=000000" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="admin_box"><h3>Parents Panel</h3></div>
+        <hr>
+        <ul>
+            <li><a href="#" class="first">Dashboard</a></li>
+            <li><a href="#"class="second">Bus Schedule</a></li>
+            <li><a href="#" class="third">Profile</a></li>
+            <!-- <li><a href="#" class="fourth">Bookings</a></li> -->
+            <!-- <li><a href="#" class="fifth">Customers</a></li> -->
+            <!-- <li><a href="#" class="sixth">Add Admin</a></li> -->
+            <li><a href="#" class="seventh">Logout</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Welcome, <span class="username">Parents</span></h1>
+            <button class="logout">LOGOUT</button>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <h2>Profile</h2><br>
+            <!-- <button class="add-booking">ADD BOOKINGS+</button> -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>PNR</th>
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>Bus</th>
+                        <th>Route</th>
+                        <th>Seat</th>
+                        <th>Amount</th>
+                        <th>Departure</th>
+                        <th>Booked</th>
+                        <!-- <th>Actions</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JKZVT65</td>
+                        <td>Jamie Rhoades</td>
+                        <td>+91 9876543210</td>
+                        <td>Bus-01</td>
+                        <td>City A - City B</td>
+                        <td>A1</td>
+                        <td>₹500</td>
+                        <td>08:00 AM</td>
+                        <td>07-Apr-2025</td>
+                        <!-- <td class="actions">
+                            <button class="edit">EDIT</button>
+                            <button class="delete">DELETE</button>
+                        </td> -->
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script src="parents_profile.js"></script>
+</body>
+</html>
